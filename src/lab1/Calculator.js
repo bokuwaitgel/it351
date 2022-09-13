@@ -7,9 +7,6 @@ export const Calculator = ({navigation}) => {
 	const [res, SetRes] = React.useState(0);
 	return (
 		<View>
-			<View style={styles.top}>
-				<Text style={styles.topText}>Lab 1 Calculator</Text>
-			</View>
 			<TextInput style={styles.input} onChangeText={setNumbet1} value={number1} placeholder="number 1" keyboardType="numeric" />
 			<TextInput style={styles.input} onChangeText={setNumbet2} value={number2} placeholder="number 2" keyboardType="numeric" />
 			<View style={styles.mp}>
