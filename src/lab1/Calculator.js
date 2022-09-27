@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, Image, TextInput, Button, ScrollView, StyleSheet, View} from 'react-native';
+import {Button, Text, Image, TextInput, ScrollView, StyleSheet, View} from 'react-native';
 
 export const Calculator = ({navigation}) => {
 	const [number1, setNumbet1] = React.useState(0);
@@ -10,16 +10,26 @@ export const Calculator = ({navigation}) => {
 			<TextInput style={styles.input} onChangeText={setNumbet1} value={number1} placeholder="number 1" keyboardType="numeric" />
 			<TextInput style={styles.input} onChangeText={setNumbet2} value={number2} placeholder="number 2" keyboardType="numeric" />
 			<View style={styles.mp}>
-				<Button onPress={() => SetRes(parseInt(number1) + parseInt(number2))} title="+" color="#841584" />
+				<View style={styles.button} >
+					<Button onPress={() => SetRes(parseInt(number1) + parseInt(number2))} title="+" color="#FFF" />
+				</View>
 			</View>
 			<View style={styles.mp}>
-				<Button onPress={() => SetRes(parseInt(number1) - parseInt(number2))} title="-" color="#841584" />
+				<View style={styles.button} >
+					<Button onPress={() => SetRes(parseInt(number1) - parseInt(number2))} title="-" color="#FFF" />
+				</View>
 			</View>
+			
 			<View style={styles.mp}>
-				<Button onPress={() => SetRes(parseInt(number1) / parseInt(number2))} title="/" color="#841584" />
+				<View style={styles.button} >
+					<Button onPress={() => SetRes(parseInt(number1) / parseInt(number2))} title="/" color="#FFF" />
+				</View>
 			</View>
+
 			<View style={styles.mp}>
-				<Button onPress={() => SetRes(parseInt(number1) * parseInt(number2))} title="*" color="#841584" />
+				<View style={styles.button} >
+					<Button onPress={() => SetRes(parseInt(number1) * parseInt(number2))} title="*" color="#FFF" />
+				</View>
 			</View>
 			<Text style={styles.pt}>Result: {res}</Text>
 		</View>
@@ -53,4 +63,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		textAlign: 'left',
 	},
+	button: {
+		backgroundColor: "#841584",
+	}
 });

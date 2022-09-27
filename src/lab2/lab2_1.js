@@ -7,30 +7,30 @@ export const Lab2_1 = ({navigation}) => {
 			<View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#2F8D8A'}}>
 				<View style={{alignItems: 'center'}}>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 				</View>
 			</View>
 			<View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#42C5C1'}}>
 				<View style={{flexDirection: 'row'}}>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 				</View>
 			</View>
 			<View style={{flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white'}}>
 				<View style={{alignItems: 'center'}}>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 					<View style={styles.button}>
-						<Button title="button" color="grey" />
+						<Button title="button" color="#FFF" />
 					</View>
 				</View>
 			</View>
@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
 		margin: 5,
 		width: 150,
 		height: 50,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: 'grey'
 	},
 	container: {
 		flex: 1,
