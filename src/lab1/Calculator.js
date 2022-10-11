@@ -10,24 +10,24 @@ export const Calculator = ({navigation}) => {
 			<TextInput style={styles.input} onChangeText={setNumbet1} value={number1} placeholder="number 1" keyboardType="numeric" />
 			<TextInput style={styles.input} onChangeText={setNumbet2} value={number2} placeholder="number 2" keyboardType="numeric" />
 			<View style={styles.mp}>
-				<View style={styles.button} >
+				<View style={styles.button}>
 					<Button onPress={() => SetRes(parseInt(number1) + parseInt(number2))} title="+" color="#FFF" />
 				</View>
 			</View>
 			<View style={styles.mp}>
-				<View style={styles.button} >
+				<View style={styles.button}>
 					<Button onPress={() => SetRes(parseInt(number1) - parseInt(number2))} title="-" color="#FFF" />
 				</View>
 			</View>
-			
+
 			<View style={styles.mp}>
-				<View style={styles.button} >
+				<View style={styles.button}>
 					<Button onPress={() => SetRes(parseInt(number1) / parseInt(number2))} title="/" color="#FFF" />
 				</View>
 			</View>
 
 			<View style={styles.mp}>
-				<View style={styles.button} >
+				<View style={styles.button}>
 					<Button onPress={() => SetRes(parseInt(number1) * parseInt(number2))} title="*" color="#FFF" />
 				</View>
 			</View>
@@ -64,6 +64,6 @@ const styles = StyleSheet.create({
 		textAlign: 'left',
 	},
 	button: {
-		backgroundColor: "#841584",
-	}
+		backgroundColor: '#841584',
+	},
 });
