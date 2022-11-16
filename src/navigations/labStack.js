@@ -16,7 +16,34 @@ import {
 	LAB3_5,
 	LAB4_1,
 	LAB4_2,
+	LAB4_2_1,
+	LAB4_2_2,
 	LAB4_3,
+	LAB5_1,
+	LAB5_2,
+	LAB5_3,
+	LAB5_4,
+	LAB6_1,
+	LAB6_2,
+	LAB7_1,
+	LAB7_2,
+	LAB7_3,
+	LAB8_1,
+	LAB8_2,
+	LAB8_3,
+	LAB8_4,
+	LAB9_1,
+	LAB9_2,
+	LAB9_3,
+	LAB9_4,
+	LAB9_5,
+	LAB9_6,
+	LAB10_1,
+	LAB10_2,
+	LAB10_3,
+	LAB10_4,
+	LAB10_5,
+	LAB10_6,
 } from './../constants/navigations';
 import Home from './../Home';
 import {Calculator} from '../lab1/Calculator';
@@ -33,8 +60,34 @@ import {Lab3_4} from '../lab3/lab3_4';
 import {Lab3_5} from '../lab3/lab3_5';
 import {Lab4_1} from '../lab4/lab4_1';
 import {Lab4_2} from '../lab4/lab4_2';
+import {Lab4_2_1} from '../lab4/lab4_2_1';
+import {Lab4_2_2} from '../lab4/lab4_2_2';
 import {Lab4_3} from '../lab4/lab4_3';
-
+import {Lab5_1} from '../lab5/lab5_1';
+import {Lab5_2} from '../lab5/lab5_2';
+import {Lab5_3} from '../lab5/lab5_3';
+import {Lab5_4} from '../lab5/lab5_4';
+import {Lab6_1} from '../lab6/Lab6_1';
+import {Lab6_2} from '../lab6/Lab6_2';
+import {Lab7_1} from '../lab7/lab7_1';
+import {Lab7_2} from '../lab7/lab7_2';
+import {Lab7_3} from '../lab7/lab7_3';
+import {Lab8_1} from '../lab8/lab8_1';
+import {Lab8_2} from '../lab8/lab8_2';
+import {Lab8_3} from '../lab8/lab8_3';
+import {Lab8_4} from '../lab8/lab8_4';
+import {Lab9_1} from '../lab9/lab9_1';
+import {Lab9_2} from '../lab9/lab9_2';
+import {Lab9_3} from '../lab9/lab9_3';
+import {Lab9_4} from '../lab9/lab9_4';
+import {Lab9_5} from '../lab9/lab9_5';
+import {Lab9_6} from '../lab9/lab9_6';
+import {Lab10_1} from '../lab10/lab10_1';
+import {Lab10_2} from '../lab10/lab10_2';
+import {Lab10_3} from '../lab10/lab10_3';
+import {Lab10_4} from '../lab10/lab10_4';
+import {Lab10_5} from '../lab10/lab10_5';
+import {Lab10_6} from '../lab10/lab10_6';
 const Stack = createStackNavigator();
 
 const LabStack = () => {
@@ -56,7 +109,34 @@ const LabStack = () => {
 				<Stack.Screen name={LAB3_5} component={Lab3_5} />
 				<Stack.Screen name={LAB4_1} component={Lab4_1} />
 				<Stack.Screen name={LAB4_2} component={Lab4_2} />
+				<Stack.Screen name={LAB4_2_1} component={Lab4_2_1} />
+				<Stack.Screen name={LAB4_2_2} component={Lab4_2_2} />
 				<Stack.Screen name={LAB4_3} component={Lab4_3} />
+				<Stack.Screen name={LAB5_1} component={Lab5_1} />
+				<Stack.Screen name={LAB5_2} component={Lab5_2} />
+				<Stack.Screen name={LAB5_3} component={Lab5_3} />
+				<Stack.Screen name={LAB5_4} component={Lab5_4} />
+				<Stack.Screen name={LAB6_1} component={Lab6_1} />
+				<Stack.Screen name={LAB6_2} component={Lab6_2} />
+				<Stack.Screen name={LAB7_1} component={Lab7_1} />
+				<Stack.Screen name={LAB7_2} component={Lab7_2} />
+				<Stack.Screen name={LAB7_3} component={Lab7_3} />
+				<Stack.Screen name={LAB8_1} component={Lab8_1} />
+				<Stack.Screen name={LAB8_2} component={Lab8_2} />
+				<Stack.Screen name={LAB8_3} component={Lab8_3} />
+				<Stack.Screen name={LAB8_4} component={Lab8_4} />
+				<Stack.Screen name={LAB9_1} component={Lab9_1} />
+				<Stack.Screen name={LAB9_2} component={Lab9_2} />
+				<Stack.Screen name={LAB9_3} component={Lab9_3} />
+				<Stack.Screen name={LAB9_4} component={Lab9_4} />
+				<Stack.Screen name={LAB9_5} component={Lab9_5} />
+				<Stack.Screen name={LAB9_6} component={Lab9_6} />
+				<Stack.Screen name={LAB10_1} component={Lab10_1} />
+				<Stack.Screen name={LAB10_2} component={Lab10_2} />
+				<Stack.Screen name={LAB10_3} component={Lab10_3} />
+				<Stack.Screen name={LAB10_4} component={Lab10_4} />
+				<Stack.Screen name={LAB10_5} component={Lab10_5} />
+				<Stack.Screen name={LAB10_6} component={Lab10_6} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

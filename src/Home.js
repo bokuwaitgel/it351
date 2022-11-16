@@ -16,6 +16,31 @@ import {
 	LAB4_1,
 	LAB4_2,
 	LAB4_3,
+	LAB5_1,
+	LAB5_2,
+	LAB5_3,
+	LAB5_4,
+	LAB6_1,
+	LAB6_2,
+	LAB7_1,
+	LAB7_2,
+	LAB7_3,
+	LAB8_1,
+	LAB8_2,
+	LAB8_3,
+	LAB8_4,
+	LAB9_1,
+	LAB9_2,
+	LAB9_3,
+	LAB9_4,
+	LAB9_5,
+	LAB9_6,
+	LAB10_1,
+	LAB10_2,
+	LAB10_3,
+	LAB10_4,
+	LAB10_5,
+	LAB10_6,
 } from './constants/navigations';
 const Home = ({navigation}) => {
 	return (
@@ -101,6 +126,136 @@ const Home = ({navigation}) => {
 					</View>
 				</View>
 				<Text style={styles.topText}>Lab 5</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB5_1)} title="lab5-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB5_2)} title="lab5-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB5_3)} title="lab5-3" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB5_4)} title="lab5-4" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 6</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB6_1)} title="lab6-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB6_2)} title="lab6-2" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 7</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB7_1)} title="lab7-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB7_2)} title="lab7-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB7_3)} title="lab7-3" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 8</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB8_1)} title="lab8-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB8_2)} title="lab8-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB8_3)} title="lab8-3" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB8_4)} title="lab8-4" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 9</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_1)} title="lab9-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_2)} title="lab9-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_3)} title="lab9-3" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_4)} title="lab9-4" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_5)} title="lab9-5" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB9_6)} title="lab9-6" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 10</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_1)} title="lab10-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_2)} title="lab10-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_3)} title="lab10-3" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_4)} title="lab10-4" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_5)} title="lab10-5" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB10_6)} title="lab10-6" color="#FFF" />
+					</View>
+				</View>
 			</View>
 		</ScrollView>
 	);

@@ -1,5 +1,8 @@
 import React from 'react';
+
 import {Text, TextInput, Button, StyleSheet, View} from 'react-native';
+import {backend} from '../api/backend';
+import {LAB4_2_1} from './../constants/navigations';
 
 export const Lab4_2 = ({navigation}) => {
 	const [title, onChangeTitle] = React.useState('');
@@ -11,7 +14,25 @@ export const Lab4_2 = ({navigation}) => {
 			<TextInput multiline numberOfLines={4} onChangeText={text => onChangeText(text)} value={text} style={styles.input1} />
 			<View style={styles.mp}>
 				<View style={styles.button}>
-					<Button onPress={() => console.log(title, text)} title="+" color="#FFF" />
+					<Button
+						onPress={() => {
+							backend.dataAdd(title, text);
+							navigation.navigate(LAB4_2_1);
+						}}
+						title="submit"
+						color="#FFF"
+					/>
+				</View>
+			</View>
+			<View style={styles.mp}>
+				<View style={styles.button}>
+					<Button
+						onPress={() => {
+							navigation.navigate(LAB4_2_1);
+						}}
+						title="list"
+						color="#FFF"
+					/>
 				</View>
 			</View>
 		</View>
