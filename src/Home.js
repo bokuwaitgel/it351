@@ -41,6 +41,10 @@ import {
 	LAB10_4,
 	LAB10_5,
 	LAB10_6,
+	LAB11_1,
+	LAB11_2,
+	LAB11_3,
+	LAB11_4,
 } from './constants/navigations';
 const Home = ({navigation}) => {
 	return (
@@ -254,6 +258,27 @@ const Home = ({navigation}) => {
 				<View style={styles.mp}>
 					<View style={styles.button}>
 						<Button onPress={() => navigation.navigate(LAB10_6)} title="lab10-6" color="#FFF" />
+					</View>
+				</View>
+				<Text style={styles.topText}>Lab 11</Text>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB11_1)} title="lab11-1" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB11_2)} title="lab11-2" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB11_3)} title="lab11-3" color="#FFF" />
+					</View>
+				</View>
+				<View style={styles.mp}>
+					<View style={styles.button}>
+						<Button onPress={() => navigation.navigate(LAB11_4)} title="lab11-4" color="#FFF" />
 					</View>
 				</View>
 			</View>

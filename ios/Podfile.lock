@@ -1,4 +1,5 @@
 PODS:
+  - BEMCheckBox (1.4.1)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
@@ -304,22 +305,20 @@ PODS:
     - glog
   - react-native-cameraroll (4.1.2):
     - React-Core
+  - react-native-image-picker (4.10.2):
+    - React-Core
   - react-native-maps (1.3.2):
     - React-Core
-  - react-native-safe-area-context (4.4.1):
-    - RCT-Folly
-    - RCTRequired
-    - RCTTypeSafety
+  - react-native-safe-area-context (3.3.2):
     - React-Core
-    - ReactCommon/turbomodule/core
   - react-native-signature-capture (0.4.12):
     - React
-  - react-native-slider (4.3.2):
+  - react-native-slider (4.3.3):
     - React-Core
   - react-native-track-player (3.2.0):
     - React-Core
     - SwiftAudioEx (= 0.15.3)
-  - react-native-webview (11.23.1):
+  - react-native-webview (11.26.0):
     - React-Core
   - React-perflogger (0.70.1)
   - React-RCTActionSheet (0.70.1):
@@ -389,25 +388,26 @@ PODS:
     - React-perflogger (= 0.70.1)
   - rn-fetch-blob (0.12.0):
     - React-Core
-  - RNCCheckbox (0.5.12):
+  - RNCCheckbox (0.5.14):
+    - BEMCheckBox (~> 1.4)
     - React-Core
   - RNCMaskedView (0.1.11):
     - React
   - RNColorMatrixImageFilters (5.2.14):
     - React-Core
-  - RNDateTimePicker (6.5.2):
+  - RNDateTimePicker (6.7.1):
     - React-Core
-  - RNDeviceInfo (10.2.1):
+  - RNDeviceInfo (10.3.0):
     - React-Core
-  - RNGestureHandler (2.7.1):
+  - RNGestureHandler (2.8.0):
     - React-Core
   - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
   - RNSketchCanvas (0.8.0):
     - React
-  - RNSVG (13.5.0):
-    - React-Core
+  - RNSVG (12.1.1):
+    - React
   - RNVectorIcons (9.2.0):
     - React-Core
   - SocketRocket (0.6.0)
@@ -464,6 +464,7 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - "react-native-cameraroll (from `../node_modules/@react-native-community/cameraroll`)"
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-signature-capture (from `../node_modules/react-native-signature-capture`)
@@ -497,6 +498,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BEMCheckBox
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -559,6 +561,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-cameraroll:
     :path: "../node_modules/@react-native-community/cameraroll"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
   react-native-maps:
     :path: "../node_modules/react-native-maps"
   react-native-safe-area-context:
@@ -621,6 +625,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
@@ -656,12 +661,13 @@ SPEC CHECKSUMS:
   React-jsinspector: 1363be638eccfe1aea1b10dd42e632b0397e5ec8
   React-logger: 7bd569e3857d74ed412ce0a5c51f421ff7d4ca7f
   react-native-cameraroll: 2957f2bce63ae896a848fbe0d5352c1bd4d20866
+  react-native-image-picker: bf34f3f516d139ed3e24c5f5a381a91819e349ea
   react-native-maps: 085f614cf14d3637b2048bb9752da5b1c27c2886
-  react-native-safe-area-context: 99b24a0c5acd0d5dcac2b1a7f18c49ea317be99a
+  react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
   react-native-signature-capture: 416a3947684e049a5b012cdd6496f878dc797f16
-  react-native-slider: e540525ea731783850802b7af457d8551edb0711
+  react-native-slider: 7d19220da2f2ae7cbb9aa80127cb73c597fa221f
   react-native-track-player: 0c26d981b5097910486cbbeb6d8f5352d41be069
-  react-native-webview: d33e2db8925d090871ffeb232dfa50cb3a727581
+  react-native-webview: 994b9f8fbb504d6314dc40d83f94f27c6831b3bf
   React-perflogger: 48c6b363e867d64b682e84f80ca45636bd65e19c
   React-RCTActionSheet: 33c74fe5c754835e3715c300618da9aa2f7203fa
   React-RCTAnimation: 2dbf0120d4d1ab7716079b4180f2ca89c465e46b
@@ -675,15 +681,15 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: a11d0c2e14140baf1e449264ca9168ae9ae6bbd0
   ReactCommon: 7f86326b92009925c6dcf93f8e825060171c379f
   rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
-  RNCCheckbox: ed1b4ca295475b41e7251ebae046360a703b6eb5
+  RNCCheckbox: 38989bbd3d7d536adf24ba26c6b3e6cefe0bea6f
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNColorMatrixImageFilters: 9b6a80ef1337e327d8b9a1c27d50e753bdcc252f
-  RNDateTimePicker: 3f32aa2247836c12618d346113e5e82ea60ddd9c
-  RNDeviceInfo: c31137f22ee779fe3931d1a8d60cc1af80ef4077
-  RNGestureHandler: b7a872907ee289ada902127f2554fa1d2c076122
+  RNDateTimePicker: 0530a73a6f3a1a85814cbde0802736993b9e675e
+  RNDeviceInfo: 4701f0bf2a06b34654745053db0ce4cb0c53ada7
+  RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSketchCanvas: 9c28adb5381543ed55cc98ce6de46479cb3cb12c
-  RNSVG: 38ca962c970dbce1ca38991a5aebf26d163f9efb
+  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   SwiftAudioEx: 83eabba2940924fc1c0d5cb0896049921365229c

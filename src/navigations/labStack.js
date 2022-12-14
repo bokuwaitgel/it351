@@ -44,6 +44,10 @@ import {
 	LAB10_4,
 	LAB10_5,
 	LAB10_6,
+	LAB11_1,
+	LAB11_2,
+	LAB11_3,
+	LAB11_4,
 } from './../constants/navigations';
 import Home from './../Home';
 import {Calculator} from '../lab1/Calculator';
@@ -88,6 +92,10 @@ import {Lab10_3} from '../lab10/lab10_3';
 import {Lab10_4} from '../lab10/lab10_4';
 import {Lab10_5} from '../lab10/lab10_5';
 import {Lab10_6} from '../lab10/lab10_6';
+import {Lab11_1} from '../lab11/lab11_1';
+import {Lab11_2} from '../lab11/lab11_2';
+import {Lab11_3} from '../lab11/lab11_3';
+import {Lab11_4} from '../lab11/lab11_4';
 const Stack = createStackNavigator();
 
 const LabStack = () => {
@@ -137,6 +145,10 @@ const LabStack = () => {
 				<Stack.Screen name={LAB10_4} component={Lab10_4} />
 				<Stack.Screen name={LAB10_5} component={Lab10_5} />
 				<Stack.Screen name={LAB10_6} component={Lab10_6} />
+				<Stack.Screen name={LAB11_1} component={Lab11_1} />
+				<Stack.Screen name={LAB11_2} component={Lab11_2} />
+				<Stack.Screen name={LAB11_3} component={Lab11_3} />
+				<Stack.Screen name={LAB11_4} component={Lab11_4} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

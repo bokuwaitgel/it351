@@ -49,3 +49,8 @@ export const LAB10_3 = 'LAB10_3';
 export const LAB10_4 = 'LAB10_4';
 export const LAB10_5 = 'LAB10_5';
 export const LAB10_6 = 'LAB10_6';
+
+export const LAB11_1 = 'LAB11_1';
+export const LAB11_2 = 'LAB11_2';
+export const LAB11_3 = 'LAB11_3';
+export const LAB11_4 = 'LAB11_4';
